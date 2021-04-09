@@ -13,12 +13,12 @@ const PostView = () => {
   });
 
   const getPost = async () => {
-    const result = await axios.get(`http://localhost:3001/posts/${id}`);
+    const result = await axios.get(`https://newsfeed-app-react.herokuapp.com/posts/${id}`);
     setPosts(result.data);
   };
 
   const getComment = async () => {
-    const result = await axios.get(`http://localhost:3001/comments?cId=${id}`);
+    const result = await axios.get(`https://newsfeed-app-react.herokuapp.com/comments?cId=${id}`);
     setItems(result.data.reverse());
   };
 
