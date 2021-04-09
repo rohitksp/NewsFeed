@@ -16,7 +16,7 @@ const PostCreate = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    await axios.post("https://news-feed-react.herokuapp.com/posts", post);
+    await axios.post("http://localhost:3001/posts", post);
     history.push("/");
   };
 

@@ -11,7 +11,7 @@ const PostEdit = () => {
   });
 
   const getPost = async () => {
-    const result = await axios.get(`https://newsfeed-app-react.herokuapp.com/posts/${id}`);
+    const result = await axios.get(`http://localhost:3001/posts/${id}`);
     setPost(result.data);
   };
 
@@ -26,7 +26,7 @@ const PostEdit = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    await axios.put(`https://news-feed-react.herokuapp.com/posts/${id}`, post);
+    await axios.put(`http://localhost:3001/posts/${id}`, post);
     history.push("/");
   };
 
