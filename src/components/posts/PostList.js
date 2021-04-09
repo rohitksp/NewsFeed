@@ -11,7 +11,7 @@ const PostList = () => {
   const fetchPosts = async () => {
     setIsLoading(true);
     try {
-      const result = await axios.get("https://newsfeed-app-react.herokuapp.com/posts");
+      const result = await axios.get("https://news-feed-react.herokuapp.com/posts");
       setIsLoading(false);
       setPosts(result.data.reverse());
     } catch {
@@ -21,7 +21,7 @@ const PostList = () => {
   };
 
   const deletePost = async (id) => {
-    await axios.delete(`https://newsfeed-app-react.herokuapp.com/posts/${id}`);
+    await axios.delete(`https://news-feed-react.herokuapp.com/posts/${id}`);
     fetchPosts();
   };
 

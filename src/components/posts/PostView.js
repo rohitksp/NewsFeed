@@ -13,12 +13,12 @@ const PostView = () => {
   });
 
   const getPost = async () => {
-    const result = await axios.get(`https://newsfeed-app-react.herokuapp.com/posts/${id}`);
+    const result = await axios.get(`https://news-feed-react.herokuapp.com/posts/${id}`);
     setPosts(result.data);
   };
 
   const getComment = async () => {
-    const result = await axios.get(`https://newsfeed-app-react.herokuapp.com/comments?cId=${id}`);
+    const result = await axios.get(`https://news-feed-react.herokuapp.com/comments?cId=${id}`);
     setItems(result.data.reverse());
   };
 
@@ -56,7 +56,7 @@ const PostView = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    await axios.post("http://localhost:3001/comments", comments);
+    await axios.post("https://news-feed-react.herokuapp.com/comments", comments);
     getComment();
     setComments({
       author: "",
