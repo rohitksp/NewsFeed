@@ -9,7 +9,7 @@ const PostView = () => {
   const [comments, setComments] = useState({
     author: "",
     comment: "",
-    cId: id,
+    postId: id,
   });
 
   const getPost = async () => {
@@ -18,7 +18,7 @@ const PostView = () => {
   };
 
   const getComment = async () => {
-    const result = await axios.get(`http://localhost:3001/comments?cId=${id}`);
+    const result = await axios.get(`http://localhost:3001/comments?postId=${id}`);
     setItems(result.data.reverse());
   };
 
@@ -61,7 +61,7 @@ const PostView = () => {
     setComments({
       author: "",
       comment: "",
-      cId: id,
+      postId: id,
     });
   };
 

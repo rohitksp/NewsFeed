@@ -10,7 +10,7 @@ const PostList = () => {
 
   const fetchPosts = async () => {
     setIsLoading(true);
-    try {
+    try { 
       const result = await axios.get("http://localhost:3001/posts");
       setIsLoading(false);
       setPosts(result.data.reverse());

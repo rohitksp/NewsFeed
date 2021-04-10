@@ -75,56 +75,32 @@
     {
       "author": "Rohit",
       "comment": "Nice",
-      "cId": "14",
+      "postId": "14",
       "id": 1
     },
     {
       "author": "Rohan",
       "comment": "Great Line",
-      "cId": "14",
+      "postId": "14",
       "id": 2
     },
     {
       "author": "Aman",
       "comment": "Nice Line",
-      "cId": "14",
+      "postId": "14",
       "id": 3
     },
     {
       "author": "Rohan",
       "comment": "Nice",
-      "cId": "13",
+      "postId": "13",
       "id": 4
     },
     {
-      "author": "Aman",
-      "comment": "Nice Line",
-      "cId": "13",
+      "author": "Rohit",
+      "comment": "Good Lines",
+      "postId": "12",
       "id": 5
-    },
-    {
-      "author": "Komal",
-      "comment": "Great",
-      "cId": "14",
-      "id": 6
-    },
-    {
-      "author": "Komal",
-      "comment": "Great",
-      "cId": "12",
-      "id": 7
-    },
-    {
-      "author": "Rohan",
-      "comment": "Nice",
-      "cId": "15",
-      "id": 8
-    },
-    {
-      "author": "Aman",
-      "comment": "Great",
-      "cId": "15",
-      "id": 9
     }
   ]
 }
